@@ -1,0 +1,14 @@
+@-moz-document url("about:addons"), url("chrome://mozapps/content/extensions/extensions.xul") {
+	#addons-page:not([warning="safemode"]) .view-header {
+		/* See styles for .view-header in chrome://mozapps/skin/extensions/extensions.css */
+		background: rgba(251, 252, 253, 0.25) !important;
+	}
+	#addons-page:not([warning="safemode"]) .view-header > .global-warning,
+	#addons-page:not([warning="safemode"]) #list-view > .view-header.global-warning-container,
+	#addons-page:not([warning="safemode"]) #detail-view > .global-warning.global-warning-container {
+		display: none !important;
+	}
+	#addons-page:not([warning="safemode"]) .addon-view[notification="warning"] {
+		background-image: none !important;
+	}
+}
