@@ -49,7 +49,15 @@
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style][treestyletab-tab-contents-inverted="true"] .tab-close-button {
 		margin: -1px 0 0 -5px !important;
 	}
-	/* Special styles for Metal theme */
+	/* Twisty */
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-twisty-style^="modern"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -2px 0 -7px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-twisty-style^="modern"][treestyletab-tab-contents-inverted="true"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -7px 0 -2px !important;
+	}
+
+	/* Metal theme */
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .tabbrowser-tab {
 		margin-top: -3px !important;
 		margin-bottom: -3px !important;
@@ -74,6 +82,48 @@
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"][treestyletab-tab-contents-inverted="true"] .tab-close-button {
 		margin: 0 -2px 0 -3px !important;
 	}
+	/* Twisty */
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"][treestyletab-twisty-style^="modern"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -2px 0 -6px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"][treestyletab-twisty-style^="modern"][treestyletab-tab-contents-inverted="true"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -6px 0 -2px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"][treestyletab-twisty-style^="osx"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -4px 0 -1px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"][treestyletab-twisty-style^="osx"][treestyletab-tab-contents-inverted="true"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -1px 0 -4px !important;
+	}
+
+	/* Sidebar theme */
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"] .tab-throbber,
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"] .tab-icon-image {
+		margin-bottom: -2px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"] .treestyletab-counter-container {
+		margin-top: 0 !important;
+		margin-bottom: -1px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"] .tab-close-button {
+		margin: 0 -3px 0 0 !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-tab-contents-inverted="true"] .tab-close-button {
+		margin: 0 0 0 -3px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"][treestyletab-twisty-style^="modern"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -1px -1px -9px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"][treestyletab-twisty-style^="modern"][treestyletab-tab-contents-inverted="true"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin: 0 -9px -1px -1px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"][treestyletab-twisty-style^="osx"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin-right: -4px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="sidebar"][treestyletab-twisty-style^="osx"][treestyletab-tab-contents-inverted="true"] .tabbrowser-tab:not([pinned="true"]) .treestyletab-twisty {
+		margin-left: -4px !important;
+	}
+
 	/* Fix too small tabs height in horizontal tab bar */
 	.tabbrowser-tabs[treestyletab-mode="horizontal"] .tabbrowser-tab .tab-content {
 		padding-top: 3px !important;
@@ -83,6 +133,7 @@
 		padding-top: 1px !important;
 		padding-bottom: 2px !important;
 	}
+
 	/* Default theme and horizontal tab bar, only child tabs */
 	.tabbrowser-tabs[treestyletab-mode="horizontal"]:not([treestyletab-style]) .tabbrowser-tab[treestyletab-parent] {
 		padding-top: 0 !important;
@@ -91,6 +142,7 @@
 	.tabbrowser-tabs[treestyletab-mode="horizontal"]:not([treestyletab-style]) .tabbrowser-tab[treestyletab-parent] .tab-content {
 		margin-top: -2px !important;
 	}
+
 	/* Informational Tab extension */
 	:root[informationaltab-thumbnail-enabled="true"][informationaltab-thumbnail-position="1"] .informationaltab-thumbnail-container {
 		margin-top: -1px !important;
