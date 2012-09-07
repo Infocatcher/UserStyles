@@ -1,0 +1,1 @@
+Stylize obsolete <popup> node like <menupopup>.
