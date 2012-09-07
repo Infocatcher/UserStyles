@@ -14,16 +14,13 @@
 		min-height: 16px !important;
 		max-height: none !important;
 	}
-	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-text {
-		margin: 0 0 0 -2px !important;
-	}
-	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-tab-contents-inverted="true"] .tab-text {
-		margin: 0 -2px 0 0 !important;
-	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-throbber,
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-icon-image {
-		margin-top: -1px !important;
-		-moz-margin-end: 1px !important;
+		margin: -1px 2px 0 0 !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-tab-contents-inverted="true"] .tab-throbber,
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-tab-contents-inverted="true"] .tab-icon-image {
+		margin: -1px 0 0 2px !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"]:not([treestyletab-style]) .tab-stack {
 		margin-top: -2px !important;
@@ -93,5 +90,10 @@
 	}
 	.tabbrowser-tabs[treestyletab-mode="horizontal"]:not([treestyletab-style]) .tabbrowser-tab[treestyletab-parent] .tab-content {
 		margin-top: -2px !important;
+	}
+	/* Informational Tab extension */
+	:root[informationaltab-thumbnail-enabled="true"][informationaltab-thumbnail-position="1"] .informationaltab-thumbnail-container {
+		margin-top: -1px !important;
+		margin-right: 4px !important;
 	}
 }
