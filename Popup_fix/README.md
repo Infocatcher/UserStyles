@@ -1,1 +1,1 @@
-Stylize obsolete <popup> node like <menupopup>.
+Stylize obsolete &lt;popup&gt; node like &lt;menupopup&gt;.
