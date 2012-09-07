@@ -14,10 +14,16 @@
 		min-height: 16px !important;
 		max-height: none !important;
 	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-text {
+		margin: 0 0 0 -2px !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-tab-contents-inverted="true"] .tab-text {
+		margin: 0 -2px 0 0 !important;
+	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-throbber,
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-icon-image {
 		margin-top: -1px !important;
-		-moz-margin-end: 0 !important;
+		-moz-margin-end: 1px !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"]:not([treestyletab-style]) .tab-stack {
 		margin-top: -2px !important;
