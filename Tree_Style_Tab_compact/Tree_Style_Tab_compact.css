@@ -29,19 +29,16 @@
 		margin-bottom: 0 !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-close-button {
-		margin-top: 0 !important;
-		margin-right: -1px !important;
+		margin: 0 -1px 0 0 !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-tab-contents-inverted="true"] .tab-close-button {
-		margin-top: 0 !important;
-		margin-left: -1px !important;
+		margin: 0 0 0 -1px !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style] .tab-close-button {
-		margin-top: -1px !important;
-		margin-right: -5px !important;
+		margin: -1px -5px 0 0 !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style][treestyletab-tab-contents-inverted="true"] .tab-close-button {
-		margin-left: -5px !important;
+		margin: -1px 0 0 -5px !important;
 	}
 	/* Special styles for Metal theme */
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .tabbrowser-tab {
@@ -61,14 +58,15 @@
 		margin-top: -3px !important;
 		margin-bottom: -3px !important;
 	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .treestyletab-counter-container {
+		margin-top: -2px !important;
+	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .tab-close-button {
-		margin-top: 0 !important;
-		margin-right: -3px !important;
+		margin: 0 -3px 0 -2px !important;
 		padding: 0 !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"][treestyletab-tab-contents-inverted="true"] .tab-close-button {
-		margin-left: -3px !important;
-		padding: 0 !important;
+		margin: 0 -2px 0 -3px !important;
 	}
 	/* Fix too small tabs height in horizontal tab bar */
 	.tabbrowser-tabs[treestyletab-mode="horizontal"] .tabbrowser-tab .tab-content {
