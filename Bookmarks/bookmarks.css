@@ -1,0 +1,87 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul") {
+
+	/* Underline bookmarks like links */
+	.bookmark-item:not([container]):hover {
+		text-decoration: underline !important;
+		cursor: pointer !important;
+	}
+
+	/* Remove width limits for RSS-bookmarks */
+	[livemark="true"] > menupopup > .bookmark-item {
+	    max-width: none !important;
+	}
+	[livemark="true"] > menupopup > .bookmark-item > .menu-accel-container {
+	    display: none !important;
+	}
+	[livemark="true"] > menupopup > .bookmark-item > .menu-iconic-text {
+	    -moz-padding-end: 0.6em !important;
+	}
+
+	/* Scrollbar for very long lists */
+	/*menupopup[placespopup="true"] > hbox > arrowscrollbox > */autorepeatbutton[disabled] {
+	    display: none !important;
+	}
+	menupopup[placespopup="true"] > hbox > arrowscrollbox > scrollbox {
+	    overflow-y: auto !important;
+	}
+	/* ScrapBook */
+	menu[ref^="urn:scrapbook:"] > menupopup > arrowscrollbox > scrollbox,
+	menu[id^="urn:scrapbook:"] > menupopup > arrowscrollbox > scrollbox {
+	    overflow-y: auto !important;
+	}
+
+	/* Compact Bookmarks Toolbar */
+	toolbarbutton.bookmark-item {
+	    max-width: 8.5em !important;
+	    margin: 0 !important;
+	    padding: 0 2px !important;
+	}
+	toolbarbutton.bookmark-item > .toolbarbutton-icon[label]:not([label=""]),
+	toolbarbutton.bookmark-item > .toolbarbutton-icon[type="menu"] {
+	    -moz-margin-start: 0 !important;
+	    -moz-margin-end: 2px !important;
+	}
+	toolbarbutton.bookmark-item > .toolbarbutton-menu-dropmarker {
+	    display: none !important;
+	}
+
+	/* Add icons */
+	.bookmark-item[scheme="javascript"]:not([image]) {
+		list-style-image: url("moz-icon://.js?size=16") !important;
+		-moz-image-region: auto !important;
+	}
+	.bookmark-item[scheme="chrome"]:not([image]) {
+		list-style-image: url("moz-icon://.xul?size=16") !important;
+		-moz-image-region: auto !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://browser/content/places/places.xul"),
+	url("chrome://browser/content/bookmarks/bookmarksPanel.xul"),
+	url("chrome://browser/content/history/history-panel.xul") {
+	/* Restore old default icon */
+	.bookmark-item:not([container]),
+	.sidebar-placesTreechildren::-moz-tree-image(title, leaf),
+	.placesTree > treechildren::-moz-tree-image(title, leaf),
+	/*#page-proxy-favicon:not([src]),*/ /* Removed in Firefox 14 */
+	.tab-icon-image {
+		list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+		-moz-image-region: rect(0, 16px, 16px, 0) !important;
+	}
+	.ac-site-icon[src="chrome://mozapps/skin/places/defaultFavicon.png"],
+	menuitem[image="chrome://mozapps/skin/places/defaultFavicon.png"] > .menu-iconic-left > .menu-iconic-icon {
+		-moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton") !important;
+		list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+		-moz-image-region: rect(0, 16px, 16px, 0) !important;
+	}
+}
+
+@-moz-document url-prefix("about:treestyletab-group?") {
+	.treestyletab-pseudo-tree-favicon[src="chrome://mozapps/skin/places/defaultFavicon.png"] {
+		-moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton") !important;
+		list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+		-moz-image-region: rect(0, 16px, 16px, 0) !important;
+	}
+}
