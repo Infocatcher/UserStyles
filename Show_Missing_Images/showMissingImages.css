@@ -1,0 +1,13 @@
+@namespace url("http://www.w3.org/1999/xhtml");
+/* http://userstyles.org/styles/17978 */
+/* Show image placeholders */
+@-moz-document url-prefix("http:"), url-prefix("https:"), url-prefix("file:"), url-prefix("data:") {
+	img:-moz-broken:not([alt]){
+		-moz-force-broken-image-icon: 1;
+		width: 24px;
+		height: 24px;
+	}
+	img:-moz-broken[alt]:hover {
+		outline: 1px solid -moz-use-text-color;
+	}
+}
