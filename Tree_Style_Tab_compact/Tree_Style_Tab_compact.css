@@ -14,19 +14,25 @@
 		min-height: 16px !important;
 		max-height: none !important;
 	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-throbber,
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-icon-image {
 		margin-top: -1px !important;
+		-moz-margin-end: 0 !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"]:not([treestyletab-style]) .tab-stack {
 		margin-top: -2px !important;
 		margin-bottom: 2px !important;
 	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"]:not([treestyletab-style]) .tab-throbber,
 	.tabbrowser-tabs[treestyletab-mode="vertical"]:not([treestyletab-style]) .tab-icon-image {
 		margin-top: 0 !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-content {
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
+	}
+	.tabbrowser-tabs[treestyletab-mode="vertical"] .treestyletab-counter-container {
+		margin-top: -1px !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tab-close-button {
 		margin: 0 -1px 0 0 !important;
@@ -57,9 +63,6 @@
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .tab-text {
 		margin-top: -3px !important;
 		margin-bottom: -3px !important;
-	}
-	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .treestyletab-counter-container {
-		margin-top: -2px !important;
 	}
 	.tabbrowser-tabs[treestyletab-mode="vertical"][treestyletab-style~="metal"] .tab-close-button {
 		margin: 0 -3px 0 -2px !important;
