@@ -1,0 +1,28 @@
+﻿@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("about:addons"), url("chrome://mozapps/content/extensions/extensions.xul") {
+	.addon[active="true"] {
+		counter-increment: addons-total addons-enabled !important;
+	}
+	.addon[active="false"] {
+		counter-increment: addons-total addons-disabled !important;
+	}
+	.addon:first-child {
+		counter-reset: addons-total addons-enabled addons-disabled !important;
+	}
+	.list:after {
+		content: "Total: "counter(addons-total)"\a(enabled: "counter(addons-enabled)", disabled: "counter(addons-disabled)")" !important;
+		white-space: pre !important;
+		cursor: default;
+		position: fixed !important;
+		top: 1.3em !important;
+		left: 1.3em !important;
+		font-size: 1em !important;
+		line-height: 1.2em !important;
+	}
+	#addons-page[title="Управление дополнениями"] .list:after {
+		content: "Всего: "counter(addons-total)"\a(включено: "counter(addons-enabled)", выключено: "counter(addons-disabled)")" !important;
+	}
+	#view-port[selectedIndex="0"] .list:after {
+		display: none !important;
+	}
+}
