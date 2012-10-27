@@ -6,9 +6,6 @@
 	.addon[active="false"] {
 		counter-increment: addons-total addons-disabled !important;
 	}
-	.addon:first-child {
-		counter-reset: addons-total addons-enabled addons-disabled !important;
-	}
 	.list:after {
 		content: "Total: "counter(addons-total)"\a(enabled: "counter(addons-enabled)", disabled: "counter(addons-disabled)")" !important;
 		white-space: pre !important;
