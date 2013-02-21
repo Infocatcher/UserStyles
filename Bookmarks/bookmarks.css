@@ -47,11 +47,12 @@
 	}
 
 	/* Add icons */
-	.bookmark-item[scheme="javascript"]:not([image]) {
+	/* Use ".bookmark-item" twice to increase priority */
+	.bookmark-item.bookmark-item[scheme="javascript"]:not([image]) {
 		list-style-image: url("moz-icon://.js?size=16") !important;
 		-moz-image-region: auto !important;
 	}
-	.bookmark-item[scheme="chrome"]:not([image]) {
+	.bookmark-item.bookmark-item[scheme="chrome"]:not([image]) {
 		list-style-image: url("moz-icon://.xul?size=16") !important;
 		-moz-image-region: auto !important;
 	}
