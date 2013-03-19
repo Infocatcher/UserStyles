@@ -1,0 +1,25 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Add icon to private tabs, https://addons.mozilla.org/addon/private-tab/ */
+.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-middle:before {
+	/* Used chrome://browser/skin/Privacy-16.png from Firefox default theme */
+	content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC5UlEQVQ4jaWTzWtcVRjGn3PvuTNz7r2TyXzdZDpjOpPaiBYCYksVYjfSLCKIa4sWunHlX+Gq0j+gG1eKlLpwIaiYSgsFayJSRhNCPlqjSTMzmel85Nw7536ce08XpWlxJfRdPi88PIvfjyil8DJHt25dUZ3dVSzvXyPPwgc7XWNigqXKju0BwOHh2PTccdSYLUX/LdCuL7/WBgjiqkRLDKeH2uDHxnmbl+fpSC+GbaMctqfPqKPT55hrOeSnfLVQWbp8AZYzoQWp4Avy6edfxpVSIej3xwNrIlOun5o1Ts7UYJkm+GgIXwggScA5R7fXw7A3jFRMeook2b7LTaqrIDCLJVZ7Nc9SlGLscRx2OshlbVSmp+Fxjs3NTXR7PYRhhEmnaBBNqzDLhtjYCigBcwv5PFtrNiGOPJHWtX3Xc+vOCce4sLAAz/OwsroKPvCifC63u7X5sJYt5NibZ99CFEhOY1891AkpU4ntxaWLc7msja+uXtV8y3rcbrcnhe+DUdb/6LOPi9x1MeIuVu/++sAPwtlIJOvUwc5Or1s/b06ap7f/XP87Y5hr5957n3f7nXAsBJJEoVAshSt3fvsmjGRWyPG8XS7O7D96hECo62TlxqL6dmMRc2ffRbvVQiIldF1HnCSo1xtQhODfvT1EcYJQShipNIqlEjZ+bx6UG9UqPTFlAneaP/+zVXtnqupkbdsGCMHBQQtpxpAohTQzUSmVIOMEw9EIG/ebIvDoEgCQvdsfquVb91C4eM9p/tH8Tij3bSOT0b3xGBRERFJBUsKYZYP3B3HEo5UwoJdqZ6Z2AYA+I+rU643uybmZhR9u3n7jaDD6gMSZnoTxdRiGEL57aSQPyyrRvn9lvrr+IonHC454SO63PkGHz0KGHCAAy6QBAMIPQPCUdNNMQ8oYSUJACIF23JR4qOd+QYr6IJoOjRyrAY0QaBrBC9Hz319r2wCAQKZQZOuoWncRJ5n/bSN5WZ2fALHrX39DB+NZAAAAAElFTkSuQmCC") !important;
+	display: -moz-box !important;
+	margin-top: 1px;
+	margin-bottom: 0;
+	-moz-margin-start: 1px;
+	-moz-margin-end: 4px;
+}
+/* Hide original tab icon */
+.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon {
+	display: none !important;
+}
+
+/* Correct margins, unfortunately theme-specific, so we override margin for each tab icon */
+.tab-icon,
+.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-middle:before {
+	margin-top: 1px;
+	margin-bottom: 0;
+	-moz-margin-start: 1px;
+	-moz-margin-end: 4px;
+}
