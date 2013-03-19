@@ -1,29 +1,31 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* Add icon to private tabs, https://addons.mozilla.org/addon/private-tab/ */
-.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-content:before {
-	content: url("chrome://browser/skin/Privacy-16.png") !important;
-	display: -moz-box !important;
-	margin: 0 !important;
-	-moz-margin-start: 2px !important;
-	-moz-margin-end: 3px !important;
-}
-/* Hide original tab icon */
-.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon-image {
-	display: none !important;
-}
-
-/* Correct margins, unfortunately theme-specific, so we override margin for each tab icon */
-.tab-throbber,
-.tab-icon-image,
-.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-content:before {
-	margin: 0 !important;
-	-moz-margin-start: 2px !important;
-	-moz-margin-end: 3px !important;
-}
-.tab-throbber[pinned],
-.tab-icon-image[pinned],
-.tabbrowser-tab[privateTab-isPrivate]:not([busy])[pinned] .tab-content:before {
-	-moz-margin-start: 5px !important;
-	-moz-margin-end: 5px !important;
+@-moz-document url("chrome://browser/content/browser.xul") {
+	/* Add icon to private tabs, https://addons.mozilla.org/addon/private-tab/ */
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-content:before {
+		content: url("chrome://browser/skin/Privacy-16.png") !important;
+		display: -moz-box !important;
+		margin: 0 !important;
+		-moz-margin-start: 2px !important;
+		-moz-margin-end: 3px !important;
+	}
+	/* Hide original tab icon */
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon-image {
+		display: none !important;
+	}
+	
+	/* Correct margins, unfortunately theme-specific, so we override margin for each tab icon */
+	.tab-throbber,
+	.tab-icon-image,
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-content:before {
+		margin: 0 !important;
+		-moz-margin-start: 2px !important;
+		-moz-margin-end: 3px !important;
+	}
+	.tab-throbber[pinned],
+	.tab-icon-image[pinned],
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy])[pinned] .tab-content:before {
+		-moz-margin-start: 5px !important;
+		-moz-margin-end: 5px !important;
+	}
 }
