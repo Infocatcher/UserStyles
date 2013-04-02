@@ -1,0 +1,18 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul") {
+	/* Change background color of private tabs, https://addons.mozilla.org/addon/private-tab/ */
+	/*~ todo: use gradients as Firefox itself */
+	.tabbrowser-tab[privateTab-isPrivate],
+	.tabbrowser-tab[privateTab-isPrivate] .tab-content {
+		background: #dbb5f0 !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate]:hover,
+	.tabbrowser-tab[privateTab-isPrivate]:hover .tab-content {
+		background: #e1c1f2 !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate][selected],
+	.tabbrowser-tab[privateTab-isPrivate][selected] .tab-content {
+		background: #ecd7f7 !important;
+	}
+}

@@ -1,0 +1,18 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://navigator/content/navigator.xul") {
+	/* Change background color of private tabs, https://addons.mozilla.org/addon/private-tab/ */
+	/*~ todo: use gradients and override -moz-appearance */
+	.tabbrowser-tab[privateTab-isPrivate],
+	.tabbrowser-tab[privateTab-isPrivate] .tab-middle {
+		background: #dbb5f0 !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate]:hover,
+	.tabbrowser-tab[privateTab-isPrivate]:hover .tab-middle {
+		background: #e1c1f2 !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate][selected],
+	.tabbrowser-tab[privateTab-isPrivate][selected] .tab-middle {
+		background: #ecd7f7 !important;
+	}
+}
