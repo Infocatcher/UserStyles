@@ -1,0 +1,2 @@
+Change background color of <a href="https://addons.mozilla.org/addon/private-tab/">private tabs</a>:
+<br><img src="https://raw.github.com/Infocatcher/UserStyles/master/Private_Tab_background/privateTabBackground.png" alt="Screenshot" align="top">
