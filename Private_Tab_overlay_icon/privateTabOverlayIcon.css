@@ -1,0 +1,26 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul") {
+	/* Add overlay icon to private tabs, https://addons.mozilla.org/addon/private-tab/ */
+	/* You should correct margins for your theme... */
+	.tabbrowser-tab[privateTab-isPrivate] .tab-content:before {
+		/* http://www.iconfinder.com/icondetails/11679/16/clock_small_icon */
+		content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASVJREFUeNpi/P//PwMlgImBQjDwBrCgCwQFBTEwMTEJMTIymgG5ElDhF8CwOvXv379369atw28AUKEQFw9PmE9oaKgQD4+pqoYGw8kzZ05vWb169eePH1cBlbzD64Xfv39bugUEhCtrajptXLOG983Xr7wqWlpOnkFB4SA5gl749euXjIqGhrG0kBDDy5cvGeRFRBj+/PvH8F9T0xgkR9CAHz9+MDMxMjIwMzExvHr1iiEuIoJBQkKCwdnDAyxH0ICfP3++uHHp0kV5CQmbNZs2gcX+ARPb3r17L4LkiHHB4TlTpqhysbIy29jY6IHEjh09emnGpElbQHLo6hnRk7KWlhbDx48fxYH+dQNyFaHC99nY2Hbx8/O/vHbtGn4DRmBeAAgwAJR8fPChrRrjAAAAAElFTkSuQmCC") !important;
+		display: -moz-box !important;
+		position: relative !important;
+		z-index: 2147483647 !important;
+		/* Theme-specific: */
+		/* start + end = -16 (icon width) */
+		-moz-margin-start: 8px !important;
+		-moz-margin-end: -24px !important;
+		/* top + bottom = 0 */
+		margin-top: 4px !important;
+		margin-bottom: -4px !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-content:before {
+		/* Theme-specific: */
+		/* start + end = -16 (icon width) */
+		-moz-margin-start: 11px !important;
+		-moz-margin-end: -27px !important;
+	}
+}
