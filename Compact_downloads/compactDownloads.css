@@ -1,0 +1,35 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://browser/content/places/places.xul") {
+	#downloadsSummary,
+	richlistitem[type="download"],
+	#downloadsRichListBox > richlistitem.download {
+		height: auto !important;
+	}
+	#downloadsRichListBox > richlistitem.download {
+		padding: 1px 0 3px !important;
+	}
+	#downloadsSummary {
+		padding: 2px 16px !important;
+	}
+	richlistitem[type="download"] {
+		padding: 2px !important;
+	}
+	#downloadsHistory > .button-box {
+		margin: 0.5em !important;
+	}
+	#downloadsSummaryDescription,
+	.downloadTarget {
+		margin-bottom: 1px !important;
+	}
+	.downloadDetails {
+		margin-bottom: 0 !important;
+	}
+	.downloadTypeIcon {
+		-moz-margin-end: 4px !important;
+	}
+	.downloadButton {
+		margin: 2px !important;
+		padding: 3px !important;
+	}
+}
