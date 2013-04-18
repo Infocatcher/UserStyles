@@ -1,0 +1,96 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://navigator/content/navigator.xul") {
+	/* Change background color of private tabs, https://addons.mozilla.org/addon/private-tab/ */
+	/* Based of Firefox default theme */
+	.tabbrowser-tab[privateTab-isPrivate] {
+		background:
+			linear-gradient(
+				to top,
+				rgba(10%, 10%, 10%, .4) 1px,
+				transparent 1px
+			),
+			linear-gradient(
+				transparent,
+				hsla(0, 0%, 55%, .1) 1px,
+				hsla(0, 0%, 42%, .15) 80%,
+				hsla(0, 0%, 0%, .15)
+			),
+			linear-gradient(
+				rgba(188, 181, 255, 0.6),
+				rgba(188, 181, 255, 0.6)
+			) !important;
+
+		-moz-appearance: none !important;
+
+		background-origin: border-box !important;
+		background-position: 1px 2px !important;
+		background-size: calc(100% - 2px) calc(100% - 2px) !important;
+		background-repeat: no-repeat !important;
+
+		border-width: 4px 3px 0 !important;
+		border-style: solid !important;
+		/*border-image: url("chrome://browser/skin/tabbrowser/tab.png") 4 3 0 fill repeat stretch !important;*/
+		border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAcCAYAAABYvS47AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJBJREFUeNpiFBGXYmJgYABhZihGBn+h+B8LkGAFYhUgVgBiPjSFn4D4ARDfAZmka2Ntpb9t80bO1y+ePkfGIDGQHEgNA9DqkKfPnnn9//9fGIiZgJgBikFsYZAcSA3IRHYpSUmQ8e9AbkGyFsR+B5VjZ4IK/gHi/wyY4D9UDuxbRgbCgHFU4ajCUYU0UggQYADV1D8Ak746KgAAAABJRU5ErkJggg==") 4 3 0 fill repeat stretch !important;
+		border-radius: 0 !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate]:hover {
+		background-image:
+			linear-gradient(
+				to top,
+				rgba(10%, 10%, 10%, .4) 1px,
+				transparent 1px
+			),
+			linear-gradient(
+				hsla(0, 0%, 100%, .2) 1px,
+				hsla(0, 0%, 75%, .1) 80%,
+				hsla(0, 0%, 60%, .1)
+			),
+			linear-gradient(
+				rgba(188, 181, 255, .5),
+				rgba(188, 181, 255, .5)
+			) !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate][selected] {
+		background-image:
+			linear-gradient(
+				rgba(188, 181, 255, .45),
+				rgba(188, 181, 255, .35) 50%
+			),
+			linear-gradient(
+				rgb(240, 240, 240) /*-moz-dialog*/,
+				rgb(240, 240, 240) /*-moz-dialog*/
+			) !important;
+	}
+	#main-window[tabsontop=false]:not([disablechrome]) .tabbrowser-tab[privateTab-isPrivate][selected] {
+		background-image:
+			linear-gradient(
+				to top,
+				rgba(10%, 10%, 10%, .4) 1px,
+				transparent 1px
+			),
+			linear-gradient(
+				rgba(188, 181, 255, .45),
+				rgba(188, 181, 255, .35) 50%
+			),
+			linear-gradient(
+				rgb(240, 240, 240) /*-moz-dialog*/,
+				rgb(240, 240, 240) /*-moz-dialog*/
+			) !important;
+	}
+
+	/* Override other styles (Tree Style Tab, themes etc.) */
+	.tabbrowser-tab[privateTab-isPrivate] * {
+		background: transparent !important;
+	}
+
+	/* Remove underline */
+	.tabbrowser-tab[privateTab-isPrivate] {
+		text-decoration: none !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-icon-image,
+	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-throbber {
+		border-bottom: none !important;
+	}
+}
