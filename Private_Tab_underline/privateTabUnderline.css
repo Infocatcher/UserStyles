@@ -1,0 +1,14 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://navigator/content/navigator.xul") {
+	.tabbrowser-tab[privateTab-isPrivate] {
+		text-decoration: underline !important;
+		-moz-text-decoration-color: red !important;
+		-moz-text-decoration-style: dashed !important;
+	}
+	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-icon-image,
+	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-throbber {
+		border-bottom: 1px dashed red !important;
+	}
+}
