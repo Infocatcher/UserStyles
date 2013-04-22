@@ -41,4 +41,13 @@
 		margin-top: 1px !important;
 		margin-bottom: 0 !important;
 	}
+
+	/* Paused downloads */
+	.download-state[state="4"] .downloadProgress {
+		filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale");
+	}
+	.download-state[state="4"] .downloadProgress > .progress-bar,
+	.download-state[state="4"] .downloadProgress > .progress-remainder {
+		opacity: 0.85;
+	}
 }
