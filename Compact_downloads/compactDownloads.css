@@ -12,7 +12,7 @@
 		padding: 1px 0 3px !important;
 	}
 	#downloadsSummary {
-		padding: 2px 16px !important;
+		padding: 2px 8px !important;
 	}
 	richlistitem[type="download"] {
 		padding: 2px !important;
@@ -25,7 +25,8 @@
 		margin-bottom: 1px !important;
 	}
 	.downloadDetails {
-		margin-bottom: 0 !important;
+		margin-top: 0 !important;
+		margin-bottom: 1px !important;
 	}
 	.downloadTypeIcon {
 		-moz-margin-end: 4px !important;
@@ -37,5 +38,7 @@
 	.downloadProgress {
 		min-height: 12px !important;
 		height: 12px !important;
+		margin-top: 1px !important;
+		margin-bottom: 0 !important;
 	}
 }
