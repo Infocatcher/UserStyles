@@ -12,7 +12,7 @@
 		padding: 1px 0 3px !important;
 	}
 	#downloadsSummary {
-		padding: 2px 8px !important;
+		padding: 2px 35px 2px 8px !important;
 	}
 	richlistitem[type="download"] {
 		padding: 2px !important;
@@ -40,6 +40,9 @@
 		height: 12px !important;
 		margin-top: 1px !important;
 		margin-bottom: 0 !important;
+	}
+	#downloadsSummaryDetails[value=""][tooltiptext=""] {
+		height: 0 !important;
 	}
 
 	/* Paused downloads */
