@@ -67,6 +67,7 @@
 	.sidebar-placesTreechildren::-moz-tree-image(title, leaf),
 	.placesTree > treechildren::-moz-tree-image(title, leaf),
 	/*#page-proxy-favicon:not([src]),*/ /* Removed in Firefox 14 */
+	.alltabs-item > .menu-iconic-left > .menu-iconic-icon,
 	.tab-icon-image {
 		list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
 		-moz-image-region: rect(0, 16px, 16px, 0) !important;
