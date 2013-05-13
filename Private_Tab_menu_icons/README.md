@@ -1,0 +1,1 @@
+Adds icons to <a href="https://addons.mozilla.org/addon/private-tab/">Private Tab</a>'s menu items

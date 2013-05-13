@@ -2,7 +2,7 @@
 
 @-moz-document url("chrome://browser/content/browser.xul"),
 	url("chrome://navigator/content/navigator.xul") {
-	/* Add icons for Private Tab's menu items https://addons.mozilla.org/addon/private-tab/ */
+	/* Add icons to Private Tab's menu items https://addons.mozilla.org/addon/private-tab/ */
 	#privateTab-menu-openNewPrivateTab,
 	#privateTab-places-openInNewPrivateTab,
 	#privateTab-context-openInNewPrivateTab {
