@@ -1,0 +1,32 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://navigator/content/navigator.xul") {
+	/* Add icons for Private Tab's menu items https://addons.mozilla.org/addon/private-tab/ */
+	#privateTab-menu-openNewPrivateTab,
+	#privateTab-places-openInNewPrivateTab,
+	#privateTab-context-openInNewPrivateTab {
+		-moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic") !important;
+		list-style-image: url("chrome://privatetab/content/privacy-16.png") !important;
+	}
+	#privateTab-menu-openNewPrivateTab > .menu-iconic-left,
+	#privateTab-places-openInNewPrivateTab > .menu-iconic-left,
+	#privateTab-context-openInNewPrivateTab > .menu-iconic-left {
+		-moz-appearance: menuimage !important;
+	}
+	/* Tab context menu: use mask icon instead of default checkbox image */
+	#privateTab-tabContext-toggleTabPrivate > .menu-iconic-left > .menu-iconic-icon {
+		display: -moz-box !important;
+		list-style-image: url("chrome://privatetab/content/privacy-16.png") !important;
+		-moz-image-region: auto !important;
+	}
+	#privateTab-tabContext-toggleTabPrivate > .menu-iconic-left {
+		-moz-appearance: menuimage !important;
+		filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale") !important;
+		opacity: 0.6 !important;
+	}
+	#privateTab-tabContext-toggleTabPrivate[checked] > .menu-iconic-left {
+		filter: none !important;
+		opacity: 1 !important;
+	}
+}
