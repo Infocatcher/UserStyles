@@ -1,1 +1,2 @@
-Adds icons to <a href="https://addons.mozilla.org/addon/private-tab/">Private Tab</a>'s menu items
+Adds icons to <a href="https://addons.mozilla.org/addon/private-tab/">Private Tab</a>'s menu items:
+<br><img src="https://raw.github.com/Infocatcher/UserStyles/master/Private_Tab_menu_icons/privateTabMenuIcons.png" alt="Screenshot" align="top">
