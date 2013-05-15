@@ -1,13 +1,33 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Show_Missing_Images */
+
 @namespace url("http://www.w3.org/1999/xhtml");
-/* http://userstyles.org/styles/17978 */
-/* Show image placeholders */
 @-moz-document url-prefix("http:"), url-prefix("https:"), url-prefix("file:"), url-prefix("data:") {
-	img:-moz-broken:not([alt]){
-		-moz-force-broken-image-icon: 1;
-		width: 24px;
-		height: 24px;
+	img:-moz-broken:not([alt=""]) {
+		border: 1px solid #000 !important;
+		border-right-color: #b2b2b2 !important;
+		border-bottom-color: #b2b2b2 !important;
+		display: inline-block !important;
+		min-width: 22px !important;
+		min-height: 22px !important;
+		padding: 0 !important;
+		/*overflow: hidden !important;*/
 	}
-	img:-moz-broken[alt]:hover {
-		outline: 1px solid -moz-use-text-color;
+	img:-moz-broken:not([alt=""]):before {
+		/* Icon from Firefox 21 */
+		content: url("data:image/gif;base64,R0lGODlhDAAOAIMAMe7u7rGxsbKysv///wAAAOXl5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAMAA4AAwQzMMg5gQ0j61DC1dvQARg4lF0JUpIpFvBUiFI3e+RI5vhu/bheDzjieI4tG83Wcm1Y0EAEADs=") !important;
+		display: inline-block !important;
+		margin: 2px 0 0 5px !important;
+	}
+	img:-moz-broken:not([alt=""]):after {
+		content: -moz-alt-content !important;
+		display: inline-block !important;
+		margin: 0 4px !important;
+	}
+	img:-moz-broken:not([alt]):after {
+		margin: 0 !important;
+	}
+	img:-moz-broken:hover {
+		outline: 1px solid !important;
+		outline-offset: -1px !important;
 	}
 }
