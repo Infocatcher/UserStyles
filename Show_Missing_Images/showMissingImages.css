@@ -2,7 +2,7 @@
 
 @namespace url("http://www.w3.org/1999/xhtml");
 @-moz-document url-prefix("http:"), url-prefix("https:"), url-prefix("file:"), url-prefix("data:") {
-	img:-moz-broken:not([alt=""]) {
+	img:-moz-broken:not([alt=""])[src]:not([src=""]) {
 		border: 1px solid #000 !important;
 		border-right-color: #b2b2b2 !important;
 		border-bottom-color: #b2b2b2 !important;
@@ -12,21 +12,21 @@
 		padding: 0 !important;
 		/*overflow: hidden !important;*/
 	}
-	img:-moz-broken:not([alt=""]):before {
+	img:-moz-broken:not([alt=""])[src]:not([src=""]):before {
 		/* Icon from Firefox 21 */
 		content: url("data:image/gif;base64,R0lGODlhDAAOAIMAMe7u7rGxsbKysv///wAAAOXl5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAMAA4AAwQzMMg5gQ0j61DC1dvQARg4lF0JUpIpFvBUiFI3e+RI5vhu/bheDzjieI4tG83Wcm1Y0EAEADs=") !important;
 		display: inline-block !important;
 		margin: 2px 0 0 5px !important;
 	}
-	img:-moz-broken:not([alt=""]):after {
+	img:-moz-broken:not([alt=""])[src]:not([src=""]):after {
 		content: -moz-alt-content !important;
 		display: inline-block !important;
 		margin: 0 4px !important;
 	}
-	img:-moz-broken:not([alt]):after {
+	img:-moz-broken:not([alt])[src]:not([src=""]):after {
 		margin: 0 !important;
 	}
-	img:-moz-broken:hover {
+	img:-moz-broken[src]:not([src=""]):hover {
 		outline: 1px solid !important;
 		outline-offset: -1px !important;
 	}
