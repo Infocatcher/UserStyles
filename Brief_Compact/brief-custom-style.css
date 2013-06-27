@@ -1,0 +1,46 @@
+.article-header a[href] {
+	text-decoration: none !important;
+	border-bottom: 1px dashed #00394f !important;
+}
+.article-header a[href]:hover {
+	border-bottom: 1px solid #00394f !important;
+}
+.article-content a[href] {
+	text-decoration: none !important;
+	border-bottom: 1px dashed #0a1f72 !important;
+}
+.article-content a[href]:hover {
+	border-bottom: 1px solid #0a1f72 !important;
+}
+
+#feed-image {
+	max-height: 110px !important;
+}
+.article-content img {
+	max-height: 180px !important;
+}
+.article-content img:hover {
+	max-height: none !important;
+}
+
+.article-header {
+    margin-bottom: 10px !important;
+}
+.article-subheader, .collapsed-article-subheader {
+    font-family: Verdana, Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+.article-content {
+    font-family: Verdana, Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+.article-container[collapsed] {
+    min-height: 0 !important;
+}
+.article-container[collapsed] .article-date {
+    display: none !important;
+}
+.article-container[collapsed] .feed-name {
+    max-width: none !important;
+    overflow: visible !important;
+}
