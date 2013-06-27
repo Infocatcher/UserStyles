@@ -1,0 +1,1 @@
+Compact style for <a href="https://addons.mozilla.org/firefox/addon/brief/">Brief</a> Firefox extension
