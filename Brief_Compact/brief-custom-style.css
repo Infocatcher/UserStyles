@@ -1,6 +1,6 @@
 /* Compact style for Brief 1.2+ Firefox extension
- * (c) Infocatcher 2009
- * version 0.2.4 - 2009-08-20
+ * (c) Infocatcher 2009, 2011
+ * version 0.2.5 - 2011-02-12
  */
 
 #header {
@@ -28,6 +28,9 @@
 	max-width: none !important;
 }
 
+.article-title-link, .article-content {
+	font-family: Verdana,Arial,Helvetica,sans-serif !important;
+}
 .article-header {
 	padding: 3px 4px 0 20px !important;
 	margin-bottom: 2px !important;
@@ -72,7 +75,7 @@
 }
 .article-subheader {
 	clear: none !important; /* ? */
-	padding: 8px 4px 0 0 !important;
+	padding: 6px 4px 0 0 !important;
 	margin: 0 !important;
 }
 .article-authors {
@@ -112,4 +115,12 @@
 }
 #feed-content[showHeadlinesOnly] {
 	padding-left: 28px !important; /* Makes space for the expand button */
+}
+
+/* For Brief 1.5.x */
+.feed-name {
+	margin-left: 20px !important;
+}
+.article-container[read] .article-title-link {
+	font-weight: normal !important;
 }
