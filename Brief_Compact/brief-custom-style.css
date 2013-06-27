@@ -1,6 +1,6 @@
 /* Compact style for Brief 1.2+ Firefox extension
  * (c) Infocatcher 2009, 2011
- * version 0.2.5 - 2011-02-12
+ * version 0.2.6 - 2011-03-19
  */
 
 #header {
@@ -30,6 +30,7 @@
 
 .article-title-link, .article-content {
 	font-family: Verdana,Arial,Helvetica,sans-serif !important;
+	word-wrap: break-word !important;
 }
 .article-header {
 	padding: 3px 4px 0 20px !important;
