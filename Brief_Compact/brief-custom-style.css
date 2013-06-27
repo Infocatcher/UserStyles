@@ -1,9 +1,13 @@
 /* Compact style for Brief 1.6.x Firefox extension
  * (c) Infocatcher 2009, 2011-2012
- * version 0.3.0b2 - 2012-07-21
+ * version 0.3.0b3 - 2012-07-24
+ *
+ * Latest version: http://infocatcher.ucoz.net/css/fx_brief/brief-custom-style.css
+ * Old version:    http://infocatcher.ucoz.net/css/fx_brief/brief-custom-style-0.2.6.css
  */
 
-/* Limits for images in articles */
+/*** Special styles ***/
+/* Limits for images size in articles */
 .content img {
 	height: auto !important;
 	width: auto !important;
@@ -16,6 +20,32 @@
 	max-width: none !important;
 }
 
+/* Show last article on top (adds empty space after last article) */
+:root {
+	height: 100% !important
+}
+#feed-content {
+	min-height: -moz-calc(200% - 9em) !important
+}
+#feed-content > article:last-child {
+	margin-bottom: -moz-calc(100% - 9em) !important;
+}
+
+/* And show separator at the end */
+#feed-content > article:last-child::after {
+	content: "";
+	display: block;
+	margin: 15px auto;
+	width: 35%;
+	height: 0;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
+}
+#feed-content > article.selected:last-child::after {
+	margin-top: 20px;
+}
+
+
+/*** Other styles ***/
 article.full {
 	max-width: none !important;
 	margin: 0 auto;
@@ -33,7 +63,6 @@ article:first-child > .full-container {
 article:first-child.selected > .full-container {
 	margin-top: 10px !important;
 }
-
 
 .header,
 .content {
