@@ -1,6 +1,6 @@
 /* Compact style for Brief 1.2+ Firefox extension
  * (c) Infocatcher 2009
- * version 0.2.3 - 2009.04.01
+ * version 0.2.4 - 2009-08-20
  */
 
 #header {
@@ -17,6 +17,8 @@
 
 /* Limits for images in articles */
 .article-content img {
+	height: auto !important;
+	width: auto !important;
 	max-height: 170px !important;
 	max-width: 200px !important;
 }
