@@ -1,6 +1,6 @@
 /* Compact style for Brief 1.6.x Firefox extension
  * (c) Infocatcher 2009, 2011-2012
- * version 0.3.0b1 - 2012-07-21
+ * version 0.3.0b2 - 2012-07-21
  */
 
 /* Limits for images in articles */
@@ -25,7 +25,7 @@ article.full {
 	margin: 0px 0 !important; /* The margins are collapsed in full view but are necessary if headlines view */
 }
 article.selected > .full-container {
-    margin: 5px 5px !important;
+	margin: 5px 5px !important;
 }
 article:first-child > .full-container {
 	margin-top: 5px !important;
@@ -46,8 +46,8 @@ article.read .title-link {
 }
 
 .header {
-    margin-bottom: 2px !important;
-    padding: 5px 3px 0 24px !important;
+	margin-bottom: 2px !important;
+	padding: 5px 3px 0 24px !important;
 }
 .subheader {
 	margin: 0 10px 0 26px;
@@ -91,9 +91,31 @@ body.headlines-view > #feed-content {
 	padding-left: 50px !important;
 }
 .day-header {
-    text-transform: none !important;
+	text-transform: none !important;
+}
+.headline-title {
+	font-size: 13px !important;
+	line-height: 18px !important;
 }
 .headline-container,
 .headline-header {
-	height: 26px !important;
+	height: 24px !important;
+}
+.headline-container > .bookmark-button {
+	margin-left: -24px !important;
+	width: 24px !important;
+}
+.headline-link {
+	margin-top: 0 !important;
+	width: 30px !important;
+	height: 24px !important;
+	background: url(chrome://brief/skin/icons/entry-arrow.png) no-repeat 3px -2px !important;
+}
+article.headline > .full-container {
+	max-width: none !important;
+	margin-left: -10px !important;
+}
+
+article.headline.selected > .full-container {
+	margin-left: -5px !important;
 }
