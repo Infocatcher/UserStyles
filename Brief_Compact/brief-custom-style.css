@@ -1,127 +1,99 @@
-/* Compact style for Brief 1.2+ Firefox extension
- * (c) Infocatcher 2009, 2011
- * version 0.2.6 - 2011-03-19
+/* Compact style for Brief 1.6.x Firefox extension
+ * (c) Infocatcher 2009, 2011-2012
+ * version 0.3.0b1 - 2012-07-21
  */
 
-#header {
-	max-height: 110px !important; /* max height of header */
-	overflow: hidden !important;
-}
-#feed-image {
-	max-height: 110px !important; /* max height of header logo */
-	max-width: 250px !important; /* max width of header logo */
-}
-#feed-content {
-	padding: 5px !important;
-}
-
 /* Limits for images in articles */
-.article-content img {
+.content img {
 	height: auto !important;
 	width: auto !important;
 	max-height: 170px !important;
 	max-width: 200px !important;
 }
 /* Show original size arter mousedown on article */
-.article-content:active img {
+.content:active img {
 	max-height: none !important;
 	max-width: none !important;
 }
 
-.article-title-link, .article-content {
-	font-family: Verdana,Arial,Helvetica,sans-serif !important;
+article.full {
+	max-width: none !important;
+	margin: 0 auto;
+}
+
+.full-container {
+	margin: 0px 0 !important; /* The margins are collapsed in full view but are necessary if headlines view */
+}
+article.selected > .full-container {
+    margin: 5px 5px !important;
+}
+article:first-child > .full-container {
+	margin-top: 5px !important;
+}
+article:first-child.selected > .full-container {
+	margin-top: 10px !important;
+}
+
+
+.header,
+.content {
+	font: 12px Verdana,Arial,Helvetica,sans-serif !important;
 	word-wrap: break-word !important;
 }
-.article-header {
-	padding: 3px 4px 0 20px !important;
-	margin-bottom: 2px !important;
+
+article.read .title-link {
+	font-weight: normal !important;
 }
-.article-title-link {
-	border-bottom: 1px dashed #00394f !important;
+
+.header {
+    margin-bottom: 2px !important;
+    padding: 5px 3px 0 24px !important;
+}
+.subheader {
+	margin: 0 10px 0 26px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	line-height: 17px; /* Make the height the same for both Lucida and Verdana */
+}
+.controls {
+	margin: -3px -1px 0 5px !important;
+}
+.content {
+	padding: 3px 10px 6px;
+}
+
+.title-link {
 	font-size: 13px !important;
+	font-family: Verdana,Arial,Helvetica,sans-serif !important;
+	border-bottom: 1px dashed #00394f !important;
 }
-.article-title-link:hover {
+.title-link:hover {
 	border-bottom: 1px solid #00394f !important;
 }
-.article-content a {
+
+.content a {
 	text-decoration: none !important;
 	border-bottom: 1px dashed #0a1f72 !important;
 }
-.article-content a:hover {
+.content a:hover {
 	border-bottom: 1px solid #0a1f72 !important;
 }
-.article-content a:visited {
+.content a:visited {
 	border-bottom: 1px dashed #444b66 !important;
 }
-.article-content a:visited:hover {
+.content a:visited:hover {
 	border-bottom: 1px solid #444b66 !important;
 }
-.article-controls {
-	margin: -3px -3px 0 3px !important; /* by float */
-}
-.article-container[collapsed] .article-controls {
-	top: 1px !important; /* by position */
-	right: 1px !important;
-	margin: 0 !important;
-	padding: 0 !important;
-}
-.article-star {
-	margin: -4px 0 0 -22px !important;
-	width: 22px !important;
-	height: 22px !important;
-}
-.expand-button {
-	left: -28px !important;
-	width: 34px !important;
-}
-.article-subheader {
-	clear: none !important; /* ? */
-	padding: 6px 4px 0 0 !important;
-	margin: 0 !important;
-}
-.article-authors {
-	clear: none !important;
-	margin-right: 1.2em !important;
-}
-.article-tags {
-	padding-left: 22px !important;
-	margin-top: 0 !important;
-}
-.article-content {
-	font-size: 12px !important;
-	padding: 6px 10px 8px 10px !important;
-}
-.article-content:empty {
-	padding: 0 0 5px !important; /* test needed! */
-}
-.article-container[collapsed] {
-	min-height: 26px !important; /* ! */
-}
-.article-container[collapsed] .collapsed-article-subheader {
-	padding: 0 4px !important;
-}
-.article-container[collapsed] .article-date {
-	float: right !important; /* ! */
-	margin-bottom: 0px !important;
-}
-.article-controls * {
-	margin: 0 !important;
-	padding: 0 !important;
-}
-.mark-read {
-	height: 25px !important;
-}
-.article-content img {
-	margin: 3px !important;
-}
-#feed-content[showHeadlinesOnly] {
-	padding-left: 28px !important; /* Makes space for the expand button */
-}
 
-/* For Brief 1.5.x */
-.feed-name {
-	margin-left: 20px !important;
+body.headlines-view > #feed-content {
+	min-width: 450px !important;
+	max-width: none !important;
+	padding-left: 50px !important;
 }
-.article-container[read] .article-title-link {
-	font-weight: normal !important;
+.day-header {
+    text-transform: none !important;
+}
+.headline-container,
+.headline-header {
+	height: 26px !important;
 }
