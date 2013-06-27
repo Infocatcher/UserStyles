@@ -1,15 +1,31 @@
-/* Compact style for Brief Firefox extension
+/* Compact style for Brief 1.2+ Firefox extension
  * (c) Infocatcher 2009
- * version 0.2.1 - 2009.03.07
+ * version 0.2.2 - 2009.03.09
  */
 
+#header {
+	max-height: 110px !important; /* max height of header */
+	overflow: hidden !important;
+}
 #feed-image {
-	max-height: 110px !important;
-	max-width: 250px !important;
+	max-height: 110px !important; /* max height of header logo */
+	max-width: 250px !important; /* max width of header logo */
 }
 #feed-content {
 	padding: 5px !important;
 }
+
+/* Limits for images in articles */
+.article-content img {
+	max-height: 170px !important;
+	max-width: 200px !important;
+}
+/* Show original size arter mousedown on article */
+.article-content:active img {
+	max-height: none !important;
+	max-width: none !important;
+}
+
 .article-header {
 	padding: 3px 4px 0 20px !important;
 	margin-bottom: 2px !important;
