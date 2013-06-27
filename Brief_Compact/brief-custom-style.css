@@ -1,6 +1,6 @@
 /* Compact style for Brief 1.2+ Firefox extension
  * (c) Infocatcher 2009
- * version 0.2.2 - 2009.03.09
+ * version 0.2.3 - 2009.04.01
  */
 
 #header {
@@ -51,7 +51,7 @@
 	border-bottom: 1px solid #444b66 !important;
 }
 .article-controls {
-	margin: -3px -3px 0 0 !important; /* by float */
+	margin: -3px -3px 0 3px !important; /* by float */
 }
 .article-container[collapsed] .article-controls {
 	top: 1px !important; /* by position */
