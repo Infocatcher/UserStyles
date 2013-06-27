@@ -1,46 +1,97 @@
-.article-header a[href] {
-	text-decoration: none !important;
-	border-bottom: 1px dashed #00394f !important;
-}
-.article-header a[href]:hover {
-	border-bottom: 1px solid #00394f !important;
-}
-.article-content a[href] {
-	text-decoration: none !important;
-	border-bottom: 1px dashed #0a1f72 !important;
-}
-.article-content a[href]:hover {
-	border-bottom: 1px solid #0a1f72 !important;
-}
+/* Style for Brief Firefox extension
+ * (c) Infocatcher 2009
+ * version 0.2.0 - 2009.03.06
+ * tested with Brief 1.2
+ */
 
 #feed-image {
 	max-height: 110px !important;
 }
-.article-content img {
-	max-height: 180px !important;
+#feed-content {
+	padding: 5px !important;
 }
-.article-content img:hover {
-	max-height: none !important;
-}
-
 .article-header {
-    margin-bottom: 10px !important;
+	padding: 3px 4px 0 20px !important;
+	margin-bottom: 2px !important;
 }
-.article-subheader, .collapsed-article-subheader {
-    font-family: Verdana, Helvetica, Arial, sans-serif !important;
-    font-size: 13px !important;
+.article-title-link {
+	border-bottom: 1px dashed #00394f !important;
+	font-size: 13px !important;
+}
+.article-title-link:hover {
+	border-bottom: 1px solid #00394f !important;
+}
+.article-content a {
+	text-decoration: none !important;
+	border-bottom: 1px dashed #0a1f72 !important;
+}
+.article-content a:hover {
+	border-bottom: 1px solid #0a1f72 !important;
+}
+.article-content a:visited {
+	border-bottom: 1px dashed #444b66 !important;
+}
+.article-content a:visited:hover {
+	border-bottom: 1px solid #444b66 !important;
+}
+.article-controls {
+	margin: -3px -3px 0 0 !important; /* by float */
+}
+.article-container[collapsed] .article-controls {
+	top: 1px !important; /* by position */
+	right: 1px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.article-star {
+	margin: -4px 0 0 -22px !important;
+	width: 22px !important;
+	height: 22px !important;
+}
+.expand-button {
+	left: -28px !important;
+	width: 34px !important;
+}
+.article-subheader {
+	clear: none !important; /* ? */
+	padding: 8px 4px 0 0 !important;
+	margin: 0 !important;
+}
+.article-authors {
+	clear: none !important;
+	margin-right: 1.2em !important;
+}
+.article-tags {
+	padding-left: 22px !important;
+	margin-top: 0 !important;
 }
 .article-content {
-    font-family: Verdana, Helvetica, Arial, sans-serif !important;
-    font-size: 13px !important;
+	font-size: 12px !important;
+	padding: 6px 10px 8px 10px !important;
+}
+.article-content:empty {
+	padding: 0 0 5px !important; /* test needed! */
 }
 .article-container[collapsed] {
-    min-height: 0 !important;
+	min-height: 26px !important; /* ! */
+}
+.article-container[collapsed] .collapsed-article-subheader {
+	padding: 0 4px !important;
 }
 .article-container[collapsed] .article-date {
-    display: none !important;
+	float: right !important; /* ! */
+	margin-bottom: 0px !important;
 }
-.article-container[collapsed] .feed-name {
-    max-width: none !important;
-    overflow: visible !important;
+.article-controls * {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.mark-read {
+	height: 25px !important;
+}
+.article-content img {
+	margin: 3px !important;
+}
+#feed-content[showHeadlinesOnly] {
+	padding-left: 28px !important; /* Makes space for the expand button */
 }
