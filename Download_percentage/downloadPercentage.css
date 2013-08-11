@@ -1,0 +1,22 @@
+﻿/* https://github.com/Infocatcher/UserStyles/tree/master/Download_percentage */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://browser/content/places/places.xul"),
+	url("about:downloads"),
+	url("chrome://browser/content/downloads/contentAreaDownloadsView.xul") {
+	/* Downloads: show NN% label after each progress bar */
+	.downloadProgress {
+		margin-right: 26px !important; /* With of the NN% label */
+	}
+	.downloadProgress::after {
+		content: attr(value)"%" !important;
+		font-size: 11px !important;
+		line-height: 11px !important;
+		opacity: 0.6 !important;
+		cursor: default !important;
+		display: -moz-box !important;
+		margin-top: -2px !important; /* Correct vertical alignement */
+		margin-right: -26px !important; /* With of the NN% label */
+	}
+}
