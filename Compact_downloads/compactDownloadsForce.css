@@ -44,12 +44,22 @@
 		padding: 5px 1px !important;
 	}
 	.downloadProgress {
-		min-height: 12px !important;
-		height: 12px !important;
 		margin: 0 3px !important;
 	}
 	#downloadsSummaryDetails[value=""][tooltiptext=""] {
 		height: 0 !important;
+	}
+
+	/* Progress bar height */
+	.downloadProgress {
+		min-width: 20px !important;
+		min-height: 10px !important;
+		height: 10px !important;
+	}
+	.downloadProgress > .progress-bar {
+		height: auto !important;
+		min-height: 2px !important;
+		max-height: 10px !important;
 	}
 
 	/* Paused downloads */
