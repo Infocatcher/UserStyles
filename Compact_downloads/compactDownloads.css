@@ -5,6 +5,9 @@
 	url("chrome://browser/content/places/places.xul"),
 	url("about:downloads"),
 	url("chrome://browser/content/downloads/contentAreaDownloadsView.xul") {
+	#downloadsListBox {
+		padding: 4px !important;
+	}
 	#downloadsSummary,
 	richlistitem[type="download"],
 	#downloadsRichListBox > richlistitem.download {
@@ -24,24 +27,24 @@
 	}
 	#downloadsSummaryDescription,
 	.downloadTarget {
-		margin-bottom: 1px !important;
+		margin: 1px 6px !important;
+		-moz-margin-end: 5px !important;
 	}
 	.downloadDetails {
-		margin-top: 0 !important;
-		margin-bottom: 1px !important;
+		margin: 0 6px 1px !important;
+		-moz-margin-end: 5px !important;
 	}
 	.downloadTypeIcon {
 		-moz-margin-end: 4px !important;
 	}
 	.downloadButton {
 		margin: 2px !important;
-		padding: 3px !important;
+		padding: 5px 3px !important;
 	}
 	.downloadProgress {
 		min-height: 12px !important;
 		height: 12px !important;
-		margin-top: 1px !important;
-		margin-bottom: 0 !important;
+		margin: 1px 4px 0 !important;
 	}
 	#downloadsSummaryDetails[value=""][tooltiptext=""] {
 		height: 0 !important;
