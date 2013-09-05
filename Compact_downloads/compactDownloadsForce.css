@@ -1,0 +1,59 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Compact_downloads */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://browser/content/places/places.xul"),
+	url("about:downloads"),
+	url("chrome://browser/content/downloads/contentAreaDownloadsView.xul") {
+	#downloadsListBox {
+		padding: 3px !important;
+	}
+	#downloadsSummary,
+	richlistitem[type="download"],
+	#downloadsRichListBox > richlistitem.download {
+		height: auto !important;
+	}
+	#downloadsRichListBox > richlistitem.download {
+		padding: 0 0 2px !important;
+	}
+	#downloadsSummary {
+		padding: 1px 23px 1px 3px !important;
+	}
+	richlistitem[type="download"] {
+		padding: 0 !important;
+	}
+	#downloadsHistory > .button-box {
+		margin: 0.4em !important;
+	}
+	#downloadsSummaryDescription,
+	.downloadTarget {
+		margin: 0 3px !important;
+	}
+	.downloadDetails {
+		margin: 0 3px !important;
+	}
+	.downloadTypeIcon {
+		-moz-margin-end: 0 !important;
+	}
+	.downloadButton {
+		margin: 0 !important;
+		padding: 5px 1px !important;
+	}
+	.downloadProgress {
+		min-height: 12px !important;
+		height: 12px !important;
+		margin: 0 3px !important;
+	}
+	#downloadsSummaryDetails[value=""][tooltiptext=""] {
+		height: 0 !important;
+	}
+
+	/* Paused downloads */
+	.download-state[state="4"] .downloadProgress {
+		filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale");
+	}
+	.download-state[state="4"] .downloadProgress > .progress-bar,
+	.download-state[state="4"] .downloadProgress > .progress-remainder {
+		opacity: 0.85;
+	}
+}
