@@ -14,7 +14,7 @@
 		height: auto !important;
 	}
 	#downloadsRichListBox > richlistitem.download {
-		padding: 0 0 2px !important;
+		padding: 1px !important;
 	}
 	#downloadsSummary {
 		padding: 1px 23px 1px 3px !important;
@@ -23,17 +23,21 @@
 		padding: 0 !important;
 	}
 	#downloadsHistory > .button-box {
-		margin: 0.4em !important;
+		margin: 0.2em !important;
 	}
 	#downloadsSummaryDescription,
 	.downloadTarget {
 		margin: 0 3px !important;
 	}
 	.downloadDetails {
-		margin: 0 3px !important;
+		margin: -1px 3px 0 !important;
 	}
 	.downloadTypeIcon {
-		-moz-margin-end: 0 !important;
+		margin: 0 1px !important;
+	}
+	.download > .downloadTypeIcon {
+		margin: 1px !important;
+		-moz-margin-start: 3px !important;
 	}
 	.downloadButton {
 		margin: 0 !important;
