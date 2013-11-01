@@ -2,11 +2,13 @@
 
 @-moz-document url("chrome://navigator/content/navigator.xul") {
 	/* Add icon to private tabs, https://addons.mozilla.org/addon/private-tab/ */
-	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon {
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon,
+	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon {
 		/* Trick: change binding to break "src" attribute */
 		-moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton") !important;
 	}
-	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon > .toolbarbutton-icon {
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon > .toolbarbutton-icon,
+	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon > .toolbarbutton-icon {
 		list-style-image: url("chrome://privatetab/content/privacy-16.png") !important;
 		display: -moz-box !important;
 		width: auto !important;
@@ -15,7 +17,8 @@
 		padding: 0 !important;
 		border: none !important;
 	}
-	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon > .toolbarbutton-text {
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon > .toolbarbutton-text,
+	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon > .toolbarbutton-text {
 		display: none !important;
 	}
 }
