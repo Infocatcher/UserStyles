@@ -1,0 +1,59 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Reorder items inside FindBar in Firefox 25+ */
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://global/content/viewSource.xul"),
+	url("chrome://global/content/viewPartialSource.xul"),
+	url("chrome://stylish/content/edit.xul"),
+	url("chrome://adblockplus/content/ui/filters.xul") {
+	findbar {
+		padding: 2px 4px !important;
+	}
+
+	/* Swap "^" and "v" buttons */
+	.findbar-find-previous {
+		-moz-box-ordinal-group: 1001 !important;
+		border-right: 1px solid ThreeDShadow !important;
+	}
+	.findbar-find-next {
+		-moz-box-ordinal-group: 1000 !important;
+		border-left: none !important;
+		border-radius: 0 !important;
+	}
+	.findbar-find-previous:-moz-locale-dir(ltr) {
+		border-top-right-radius: 2px !important;
+		border-bottom-right-radius: 2px !important;
+	}
+	.findbar-find-previous:-moz-locale-dir(rtl) {
+		border-top-left-radius: 2px !important;
+		border-bottom-left-radius: 2px !important;
+	}
+
+	/* Reorder: [x][   find field][buttons][  empty space  ] */
+	.findbar-closebutton {
+		-moz-box-ordinal-group: 0 !important;
+		margin: 0 !important;
+		-moz-margin-end: 4px !important;
+	}
+	/*
+	We don't use :-moz-any() here for performance reasons:
+	https://developer.mozilla.org/en-US/docs/Web/CSS/:any#Issues_with_performance_and_specificity
+	*/
+	.findbar-container > image,
+	.findbar-container > description,
+	.findbar-container > label,
+	.findbar-container > spacer {
+		-moz-box-ordinal-group: 2 !important;
+	}
+	/* Firefox 28+ */
+	findbar > .findbar-closebutton {
+		padding: 2px !important;
+	}
+	.findbar-container {
+		-moz-padding-start: 0 !important;
+	}
+
+	.findbar-find-status {
+		margin: 0 !important;
+		-moz-margin-start: 6px !important;
+	}
+}
