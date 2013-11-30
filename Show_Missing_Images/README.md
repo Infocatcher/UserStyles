@@ -1,0 +1,1 @@
+Show placeholders in place of missing and not loaded images

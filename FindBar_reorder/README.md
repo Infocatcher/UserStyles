@@ -1,0 +1,1 @@
+Reorder items inside FindBar in Firefox 25+

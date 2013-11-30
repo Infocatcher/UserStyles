@@ -1,0 +1,1 @@
+Hide warnings about disabled compatibility (<em>extensions.checkCompatibility*</em>) and update security (<em>extensions.checkUpdateSecurity</em>) checking from Add-ons Manager

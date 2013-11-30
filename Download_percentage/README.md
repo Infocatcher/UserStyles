@@ -1,0 +1,1 @@
+Downloads: show NN% label after each progress bar
