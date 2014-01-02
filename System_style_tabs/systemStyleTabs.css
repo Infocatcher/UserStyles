@@ -1,0 +1,37 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul"),
+	url("chrome://navigator/content/navigator.xul") {
+	/* Use OS styles for tabs */
+	.tabbrowser-tab {
+		-moz-appearance: tab !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.tabbrowser-tab,
+	.tab-content,
+	.tab-background,
+	.tab-background-start,
+	.tab-background-middle,
+	.tab-background-end {
+		background: transparent !important;
+	}
+	.tabbrowser-tab::before,
+	.tabbrowser-tab::after,
+	.tab-background-start::before,
+	.tab-background-start::after,
+	.tab-background-end::before,
+	.tab-background-end::after {
+		content: none !important;
+	}
+	.tabs-newtab-button {
+		-moz-appearance: tab !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		max-width: 32px !important;
+	}
+	.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
