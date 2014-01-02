@@ -1,0 +1,1 @@
+Use OS styles for tabs

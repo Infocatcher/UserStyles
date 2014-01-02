@@ -41,5 +41,8 @@ Some UI tweaks for [Private Tab](https://addons.mozilla.org/addon/private-tab/) 
 ##### [Show missing images](Show_Missing_Images)
 Show placeholders in place of missing and not loaded images
 
+##### [System style tabs](System_style_tabs)
+Use OS styles for tabs
+
 ##### [Tree Style Tab compact](Tree_Style_Tab_compact)
 Compact vertical tabs added using [Tree Style Tab](https://addons.mozilla.org/firefox/addon/tree-style-tab/) extension
