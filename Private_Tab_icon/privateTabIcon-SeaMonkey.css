@@ -18,7 +18,9 @@
 		border: none !important;
 	}
 	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon > .toolbarbutton-text,
-	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon > .toolbarbutton-text {
+	.tabbrowser-tab[privateTab-isPrivate]:not([busy]) .tab-icon > .toolbarbutton-multiline-text,
+	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon > .toolbarbutton-text,
+	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon > .toolbarbutton-multiline-text {
 		display: none !important;
 	}
 }
