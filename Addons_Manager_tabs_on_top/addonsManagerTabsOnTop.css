@@ -1,0 +1,68 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Addons_Manager_tabs_on_top */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Tabs-like categories in Add-on Manager */
+@-moz-document url("about:addons"),
+	url("chrome://mozapps/content/extensions/extensions.xul") {
+	#header {
+		margin-bottom: 6px !important;
+	}
+	#header + hbox:not([id]) {
+		-moz-box-orient: vertical !important;
+	}
+	#categories > scrollbox > .scrollbox-innerbox {
+		display: block !important;
+	}
+	#categories {
+		margin: 2px 2px 0 !important;
+	}
+	.category {
+		-moz-box-orient: vertical !important;
+		padding: 2px !important;
+		height: auto !important;
+		border-radius: 5px 5px 0 0 !important;
+		max-width: 80px !important; /* Should be larger, than .category-name ! */
+		opacity: 1 !important;
+		transition: max-width 0.6s ease-out,
+			opacity 0.6s ease-out !important;
+	}
+	.category-icon {
+		margin: 4px 0 0 !important;
+	}
+	.category-name {
+		font-size: 100%;
+		overflow: hidden !important;
+		/* Note: we set the same for "min-width" and "max-width" to fix width */
+		min-width: 64px !important;
+		max-width: 64px !important;
+		/*text-overflow: ellipsis !important;*/
+		text-align: center;
+		margin: 1px !important;
+		display: -moz-box !important;
+	}
+	.category-badge {
+		position: relative; /* to show over category icon */
+		padding: 0 6px !important;
+		margin: -34px -50px 16px 0 !important;
+	}
+	.category[disabled] {
+		max-width: 0 !important;
+		border: 0 !important;
+		opacity: 0 !important;
+		padding: 0 !important;
+	}
+	.category[selected] {
+		border-color: #C3CEDF;
+		border-bottom-color: #E2E9F2;
+	}
+
+	/* Maximize the size of the viewport when the window is small */
+	@media (max-width: 800px) {
+		.category-name {
+			display: none !important;
+		}
+		.category-badge {
+			margin: -16px -16px 0 0 !important;
+		}
+	}
+}
