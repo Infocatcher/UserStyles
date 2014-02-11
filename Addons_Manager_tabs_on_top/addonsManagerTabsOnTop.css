@@ -37,7 +37,7 @@
 		max-width: 64px !important;
 		/*text-overflow: ellipsis !important;*/
 		text-align: center;
-		margin: 1px !important;
+		margin: 0 1px !important;
 		display: -moz-box !important;
 	}
 	.category-badge {
@@ -58,6 +58,9 @@
 
 	/* Maximize the size of the viewport when the window is small */
 	@media (max-width: 800px) {
+		.category-icon {
+			margin-top: 2px !important;
+		}
 		.category-name {
 			display: none !important;
 		}
