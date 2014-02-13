@@ -1,0 +1,13 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Hide menu items from Private Tab extension, https://addons.mozilla.org/addon/private-tab/ */
+/* Comma-separated list of all items */
+#privateTab-menu-openNewPrivateTab            /* File - New Private Tab */,
+#privateTab-appMenu-openNewPrivateTab         /* App menu - New Private Tab */,
+#main-window:not([privateTab-isPrivate])
+	#privateTab-context-openInNewPrivateTab   /* Page context menu - Open Link in New Private Tab */,
+#privateTab-places-openInNewPrivateTab        /* Bookmarks context menu - Open in a New Private Tab */,
+#privateTab-places-openInPrivateTabs          /* Selected bookmarks context menu - Open All in Private Tabs */,
+#privateTab-places-openContainerInPrivateTabs /* Bookmark folders context menu - Open All in Private Tabs */,
+#privateTab-tabContext-toggleTabPrivate       /* Tab context menu - Private Tab */ {
+	display: none !important;
+}

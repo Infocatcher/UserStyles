@@ -1,0 +1,1 @@
+Hide menu items from <a href="https://addons.mozilla.org/addon/private-tab/">Private Tab</a> extension (example)

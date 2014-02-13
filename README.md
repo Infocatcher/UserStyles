@@ -35,6 +35,7 @@ Reorder items inside FindBar in Firefox 25+
 Stylize obsolete &lt;popup&gt; node like &lt;menupopup&gt;
 
 ##### [Private Tab: background](Private_Tab_background)
+##### [Private Tab: hide items](Private_Tab_hide_items)
 ##### [Private Tab: icon](Private_Tab_icon)
 ##### [Private Tab: menu icons](Private_Tab_menu_icons)
 ##### [Private Tab: overlay icon](Private_Tab_overlay_icon)
