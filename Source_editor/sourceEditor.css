@@ -1,0 +1,50 @@
+﻿/* https://github.com/Infocatcher/UserStyles/tree/master/Source_editor */
+
+@namespace url("http://www.w3.org/1999/xhtml");
+/* Some tweaks for source editor component (used in Scratchpad and other developer tools) */
+/* CodeMirror */
+@-moz-document regexp(".+?chrome://browser/content/devtools/codemirror/codemirror\.css.+") {
+	.devtools-monospace {
+	  	font-family: monospace !important;
+	}
+	.CodeMirror {
+		font-size: 13px !important;
+	}
+	.cm-comment {
+		font-style: italic !important;
+	}
+	.cm-keyword {
+		font-weight: bold !important;
+	}
+	.CodeMirror-nonmatchingbracket {
+		font-weight: bold !important;
+		outline: none !important;
+		color: #f22 !important;
+	}
+	.CodeMirror-matchingbracket {
+		font-weight: bold !important;
+		outline: none !important;
+		color: #b7520e !important;
+	}
+}
+/* Orion, uncomment for Firefox 26 and older
+@-moz-document url("data:text/html;charset=utf8,<!DOCTYPE%20html><html%20style='height:100%'%20dir='ltr'><head><link%20rel='stylesheet'%20href='chrome://browser/skin/devtools/orion-container.css'></head><body%20style='height:100%;margin:0;overflow:hidden'><div%20id='editor'%20style='height:100%'></div></body></html>") {
+	.token_singleline_comment,
+	.token_multiline_comment,
+	.token_doc_comment  {
+		font-style: italic !important;
+	}
+	.token_string {
+		font-style: normal !important;
+	}
+	.token_keyword {
+		font-weight: bold !important;
+	}
+	.currentBracket,
+	.matchingBracket {
+		font-weight: bold !important;
+		outline: none !important;
+		color: #3737ff !important;
+	}
+}
+*/

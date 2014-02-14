@@ -1,0 +1,1 @@
+Some tweaks for source editor component (used in Scratchpad and other developer tools)

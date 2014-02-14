@@ -45,6 +45,9 @@ Some UI tweaks for [Private Tab](https://addons.mozilla.org/addon/private-tab/) 
 ##### [Show missing images](Show_Missing_Images)
 Show placeholders in place of missing and not loaded images
 
+##### [Source editor](Source_editor)
+Some tweaks for source editor component (used in Scratchpad and other developer tools)
+
 ##### [System style tabs](System_style_tabs)
 Use OS styles for tabs
 
