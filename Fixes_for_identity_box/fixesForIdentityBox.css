@@ -1,0 +1,21 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Fixes_for_identity_box */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul") {
+	/* Don't collapse #identity-box, if user edit text in URL bar */
+	/* See chrome://browser/content/browser.css */
+	#urlbar[pageproxystate="invalid"] > #identity-box /*> #identity-box-inner*/ > #identity-icon-labels:not([collapsed="true"]) {
+		visibility: inherit !important;
+		color: grayText !important;
+		opacity: 0.9 !important;
+	}
+	#urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity, /* Original */
+	#urlbar[pageproxystate="invalid"] > #identity-box.verifiedIdentity {
+		-moz-margin-end: 4px !important;
+	}
+	/* Make #identity-box on empty tab clickable to load URI from clipboard using middle-click */
+	#urlbar[pageproxystate="invalid"] > #identity-box {
+		pointer-events: auto !important;
+		-moz-user-focus: ignore !important;
+	}
+}
