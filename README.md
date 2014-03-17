@@ -31,6 +31,9 @@ Downloads: show NN% label after each progress bar
 ##### [FindBar reorder](FindBar_reorder)
 Reorder items inside FindBar in Firefox 25+
 
+##### [Fixes for identity box](Fixes_for_identity_box)
+Some fixes for “identity box” (icon before location bar)
+
 ##### [Popup fix](Popup_fix)
 Stylize obsolete &lt;popup&gt; node like &lt;menupopup&gt;
 

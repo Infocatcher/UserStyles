@@ -2,7 +2,7 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @-moz-document url("chrome://browser/content/browser.xul") {
-	/* Don't collapse #identity-box, if user edit text in URL bar */
+	/* Don't collapse #identity-box, if user edit text in location bar */
 	/* See chrome://browser/content/browser.css */
 	#urlbar[pageproxystate="invalid"] > #identity-box /*> #identity-box-inner*/ > #identity-icon-labels:not([collapsed="true"]) {
 		visibility: inherit !important;
