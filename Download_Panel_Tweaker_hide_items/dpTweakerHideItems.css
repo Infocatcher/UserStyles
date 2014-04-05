@@ -1,0 +1,12 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Download_Panel_Tweaker_hide_items */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Hide menu items from Download Panel Tweaker, https://addons.mozilla.org/addon/download-panel-tweaker/ */
+/* Comma-separated list of all items */
+@-moz-document url("chrome://browser/content/browser.xul") {
+	#downloadPanelTweaker-menuItem-removeFile     /* Remove File From Disk */,
+	#downloadPanelTweaker-menuItem-copyReferrer   /* Copy Download Page Link */,
+	#downloadPanelTweaker-menuItem-clearDownloads /* Clear Downloads */ {
+		display: none !important;
+	}
+}

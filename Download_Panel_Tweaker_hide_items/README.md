@@ -1,0 +1,1 @@
+Hide menu items from <a href="https://addons.mozilla.org/addon/download-panel-tweaker/">Download Panel Tweaker</a> extension (example)

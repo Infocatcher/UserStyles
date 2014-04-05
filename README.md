@@ -20,10 +20,13 @@ Tabs-like categories in Add-ons Manager
 Some styles related to bookmarks
 
 ##### [Brief compact](Brief_Compact)
-Compact style for <a href="https://addons.mozilla.org/firefox/addon/brief/">Brief</a> Firefox extension
+Compact style for <a href="https://addons.mozilla.org/addon/brief/">Brief</a> Firefox extension
 
 ##### [Compact downloads](Compact_downloads)
 Compact styles for built-in Firefox download panel and other downloads lists
+
+##### [Download Panel Tweaker: hide items](Download_Panel_Tweaker_hide_items)
+Hide menu items from <a href="https://addons.mozilla.org/addon/download-panel-tweaker/">Download Panel Tweaker</a> extension
 
 ##### [Download percentage](Download_percentage)
 Downloads: show NN% label after each progress bar
