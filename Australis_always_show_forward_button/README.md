@@ -1,0 +1,1 @@
+Always show forward button in Australis interface/theme

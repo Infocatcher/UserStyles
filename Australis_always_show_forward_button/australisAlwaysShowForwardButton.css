@@ -1,0 +1,30 @@
+﻿/* https://github.com/Infocatcher/UserStyles/tree/master/Australis_always_show_forward_button */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul") {
+	/* Australis: always show forward button */
+	window:not([chromehidden~="toolbar"]) #urlbar-container > #forward-button[occluded-by-urlbar] {
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlbar-wrapper {
+		clip-path: none !important;
+	}
+	window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlbar-wrapper > #urlbar {
+	  margin-left: 0 !important;
+	}
+	/*
+	window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlbar-wrapper > #urlbar > #notification-popup-box[hidden] + #identity-box {
+		-moz-padding-start: 2px !important;
+	}
+	window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlbar-wrapper > #urlbar > #notification-popup-box {
+		padding-left: 3px !important;
+	}
+	*/
+	#identity-box {
+		padding: 2px !important;
+	}
+	#notification-popup-box {
+		padding-left: 3px !important;
+	}
+}
