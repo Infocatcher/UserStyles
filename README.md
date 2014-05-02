@@ -16,7 +16,7 @@ Hide warnings about disabled compatibility and update security checking from Add
 ##### [Add-ons Manager: tabs on top](Addons_Manager_tabs_on_top)
 Tabs-like categories in Add-ons Manager
 
-##### [Add-ons Manager: tabs on top](Australis_always_show_forward_button)
+##### [Australis: always show forward button](Australis_always_show_forward_button)
 Always show forward button in Australis interface/theme
 
 ##### [Bookmarks](Bookmarks)
