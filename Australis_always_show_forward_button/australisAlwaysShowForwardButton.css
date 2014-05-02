@@ -3,7 +3,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @-moz-document url("chrome://browser/content/browser.xul") {
 	/* Australis: always show forward button */
-	window:not([chromehidden~="toolbar"]) #urlbar-container > #forward-button[occluded-by-urlbar] {
+	window:not([chromehidden~="toolbar"]) #urlbar-container > #forward-button {
 		visibility: visible !important;
 		opacity: 1 !important;
 	}
