@@ -11,7 +11,7 @@
 		clip-path: none !important;
 	}
 	window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlbar-wrapper > #urlbar {
-	  margin-left: 0 !important;
+		margin-left: 0 !important;
 	}
 	/*
 	window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlbar-wrapper > #urlbar > #notification-popup-box[hidden] + #identity-box {
