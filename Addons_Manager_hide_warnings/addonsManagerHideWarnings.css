@@ -1,5 +1,6 @@
 /* https://github.com/Infocatcher/UserStyles/tree/master/Addons_Manager_hide_warnings */
 
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @-moz-document url("about:addons"), url("chrome://mozapps/content/extensions/extensions.xul") {
 	#addons-page:not([warning="safemode"]) .view-header {
 		/* See styles for .view-header in chrome://mozapps/skin/extensions/extensions.css */
