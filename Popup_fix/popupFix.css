@@ -1,3 +1,5 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Popup_fix */
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* Stylize obsolete <popup> node like <menupopup>, for not yet updated extensions */
 popup {

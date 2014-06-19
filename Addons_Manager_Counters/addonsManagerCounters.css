@@ -1,4 +1,6 @@
-﻿@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+﻿/* https://github.com/Infocatcher/UserStyles/tree/master/Addons_Manager_Counters */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @-moz-document url("about:addons"), url("chrome://mozapps/content/extensions/extensions.xul") {
 	.addon[active="true"] {
 		counter-increment: addons-total addons-enabled !important;

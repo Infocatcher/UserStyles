@@ -1,8 +1,8 @@
+/* http://userstyles.org/styles/71882/tree-style-tab-compact-tabs
+ * https://github.com/Infocatcher/UserStyles/tree/master/Tree_Style_Tab_compact */
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-/*
-http://userstyles.org/styles/71882/tree-style-tab-compact-tabs
-https://github.com/Infocatcher/UserStyles/tree/master/Tree_Style_Tab_compact
-*/
+
 @-moz-document url("chrome://browser/content/browser.xul") {
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tabbrowser-tab,
 	.tabbrowser-tabs[treestyletab-mode="vertical"] .tabbrowser-tab:not([selected="true"]) {
