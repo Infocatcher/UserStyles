@@ -1,1 +1,1 @@
-Stylize obsolete &lt;popup&gt; node like &lt;menupopup&gt;.
+Stylize obsolete &lt;popup&gt; node like &lt;menupopup&gt;, for not yet updated extensions

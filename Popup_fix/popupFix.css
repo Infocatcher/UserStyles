@@ -1,4 +1,5 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Stylize obsolete <popup> node like <menupopup>, for not yet updated extensions */
 popup {
 	-moz-appearance: menupopup;
 	border: 3px solid transparent;
