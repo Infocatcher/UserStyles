@@ -1,0 +1,1 @@
+Reduce height of XUL tree rows in Firefox 25+

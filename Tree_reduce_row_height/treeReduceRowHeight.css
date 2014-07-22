@@ -1,0 +1,9 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Tree_reduce_row_height */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Reduce height of XUL tree rows in Firefox 25+ */
+@media (-moz-windows-default-theme) {
+	treechildren:not(.autocomplete-treebody)::-moz-tree-row {
+		height: 1.55em !important;
+	}
+}

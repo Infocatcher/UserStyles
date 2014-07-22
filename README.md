@@ -60,5 +60,8 @@ Some tweaks for source editor component (used in Scratchpad and other developer 
 ##### [System style tabs](System_style_tabs)
 Use OS styles for tabs
 
+##### [Tree: reduce row height](Tree_reduce_row_height)
+Reduce height of XUL tree rows in Firefox 25+
+
 ##### [Tree Style Tab compact](Tree_Style_Tab_compact)
 Compact vertical tabs added using [Tree Style Tab](https://addons.mozilla.org/firefox/addon/tree-style-tab/) extension
