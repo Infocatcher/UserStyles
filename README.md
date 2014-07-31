@@ -13,6 +13,9 @@ Show counter for total/enabled/disabled add-ons in top left corner of Add-ons Ma
 ##### [Add-ons Manager: hide warnings](Addons_Manager_hide_warnings)
 Hide warnings about disabled compatibility and update security checking from Add-ons Manager
 
+##### [Add-ons Manager: limit release notes height](Addons_Manager_limit_release_notes_height)
+Limit release notes height in Add-ons Manager
+
 ##### [Add-ons Manager: tabs on top](Addons_Manager_tabs_on_top)
 Tabs-like categories in Add-ons Manager
 

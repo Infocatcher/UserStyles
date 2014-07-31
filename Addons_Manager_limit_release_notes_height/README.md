@@ -1,0 +1,1 @@
+Limit release notes height in Add-ons Manager (a bit buggy with expand/collapse animation, but better than nothing)

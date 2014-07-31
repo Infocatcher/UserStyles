@@ -1,0 +1,16 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/Addons_Manager_limit_release_notes_height */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("about:addons"),
+	url("chrome://mozapps/content/extensions/extensions.xul") {
+	/* Add-ons Manager: limit release notes height */
+	.relnotes-container {
+		max-height: 20em !important;
+		overflow: auto !important;
+	}
+	.description-outer-container {
+		height: auto !important;
+		max-height: 24em !important; /* max-height of .relnotes-container + 4 */
+		overflow: hidden !important;
+	}
+}
