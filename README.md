@@ -7,6 +7,9 @@ This is some styles to change Firefox (and sometimes SeaMonkey) appearance
 <hr>
 #### Styles in alphabetical order
 
+##### [About:NewTab fixes](About_NewTab_fixes)
+Some fixes for about:newtab page
+
 ##### [Add-ons Manager: counters](Addons_Manager_Counters)
 Show counter for total/enabled/disabled add-ons in top left corner of Add-ons Manager
 

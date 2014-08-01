@@ -1,0 +1,16 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/About_NewTab_fixes */
+
+/* Some fixes for about:newtab page */
+@namespace url("http://www.w3.org/1999/xhtml");
+@-moz-document url("about:newtab") {
+	/*
+	Always show logo to switch search engines in Firefox 31+
+	Note: used <Image width="65" height="26">data:image/png;base64,...</Image> from searchPlugin.xml
+	(but old plugins doesn't have large icons)
+	*/
+	#newtab-search-logo[hidden] {
+		display: -moz-box !important;
+		background-image: none !important;
+		width: 24px !important;
+	}
+}
