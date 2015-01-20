@@ -7,8 +7,12 @@
 	url("chrome://navigator/content/navigator.xul") {
 	.tabbrowser-tab[privateTab-isPrivate] {
 		text-decoration: underline !important;
+		/* Firefox 35 and older */
 		-moz-text-decoration-color: red !important;
 		-moz-text-decoration-style: dashed !important;
+		/* Firefox 36+ */
+		text-decoration-color: red !important;
+		text-decoration-style: dashed !important;
 	}
 	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-icon-image,
 	.tabbrowser-tab[privateTab-isPrivate][pinned] .tab-throbber {
