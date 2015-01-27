@@ -24,7 +24,10 @@
 	}
 	#privateTab-tabContext-toggleTabPrivate > .menu-iconic-left {
 		-moz-appearance: menuimage !important;
-		filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale") !important;
+		/* Firefox 35 and older */
+		filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale");
+		/* Firefox 36+ */
+		filter: grayscale(1);
 		opacity: 0.6 !important;
 	}
 	#privateTab-tabContext-toggleTabPrivate[checked] > .menu-iconic-left {

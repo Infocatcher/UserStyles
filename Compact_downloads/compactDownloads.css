@@ -74,7 +74,10 @@
 
 	/* Paused downloads */
 	.download-state[state="4"] .downloadProgress {
+		/* Firefox 35 and older */
 		filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale");
+		/* Firefox 36+ */
+		filter: grayscale(1);
 	}
 	.download-state[state="4"] .downloadProgress > .progress-bar,
 	.download-state[state="4"] .downloadProgress > .progress-remainder {
