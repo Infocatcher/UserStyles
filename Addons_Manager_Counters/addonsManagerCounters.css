@@ -9,18 +9,18 @@
 		counter-increment: addons-total addons-disabled !important;
 	}
 	.list:after {
-		content: "Total: "counter(addons-total)"\a(enabled: "counter(addons-enabled)", disabled: "counter(addons-disabled)")" !important;
+		content: "Total: "counter(addons-total)" (enabled: "counter(addons-enabled)", disabled: "counter(addons-disabled)")" !important;
 		white-space: pre !important;
 		cursor: default;
 		position: fixed !important;
-		top: 1.3em !important;
-		left: 1.3em !important;
+		top: 0.33em !important;
+		right: 0.7em !important;
 		opacity: 0.65 !important;
 		font-size: 1em !important;
 		line-height: 1.2em !important;
 	}
 	#addons-page[title="Управление дополнениями"] .list:after {
-		content: "Всего: "counter(addons-total)"\a(включено: "counter(addons-enabled)", выключено: "counter(addons-disabled)")" !important;
+		content: "Всего: "counter(addons-total)" (включено: "counter(addons-enabled)", выключено: "counter(addons-disabled)")" !important;
 	}
 	#view-port[selectedIndex="0"] .list:after {
 		display: none !important;
