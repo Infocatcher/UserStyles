@@ -71,3 +71,9 @@ Reduce height of XUL tree rows in Firefox 25+
 
 ##### [Tree Style Tab compact](Tree_Style_Tab_compact)
 Compact vertical tabs added using [Tree Style Tab](https://addons.mozilla.org/firefox/addon/tree-style-tab/) extension
+
+<hr>
+#### Site-specific styles in alphabetical order
+
+##### [HabraHabr.ru: collapse sidebar](HabraHabr.ru_collapse_sidebar)
+Collapse sidebar on <a href="http://habrahabr.ru/">habrahabr.ru</a> and show only on hover

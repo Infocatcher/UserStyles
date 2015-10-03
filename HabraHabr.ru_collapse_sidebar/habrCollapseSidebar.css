@@ -1,0 +1,39 @@
+/* https://github.com/Infocatcher/UserStyles/tree/master/HabraHabr.ru_collapse_sidebar */
+
+/* Collapse sidebar and show only on hover */
+
+@namespace url("http://www.w3.org/1999/xhtml");
+@-moz-document
+	domain("habrahabr.ru"),
+	domain("geektimes.ru"),
+	domain("megamozg.ru") {
+	body {
+		background: transparent !important;
+	}
+	#navbar {
+		max-width: 6px !important;
+		overflow: hidden !important;
+		transition: max-width 80ms ease-in-out 350ms !important;
+	}
+	#navbar:hover {
+		max-width: 72px !important;
+		transition-delay: 150ms !important;
+	}
+	.tab_settings {
+		position: static !important;
+	}
+	#navbar_overlay.show + #navbar:hover {
+		max-width: 800px !important;
+		width: 800px !important;
+	}
+	#navbar:not(:hover) a {
+		transition: margin-left 1ms linear 430ms !important; /* sum of delays for #navbar */
+		margin-left: 7px !important; /* #navbar width + 1px to hide focus ring */
+	}
+	#layout > .inner {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding-left: 30px !important; /* 24 + #navbar width */
+		padding-right: 24px !important;
+	}
+}
