@@ -11,7 +11,8 @@
 	}
 	.tabbrowser-tab[privateTab-isPrivate] .tab-icon-image > .toolbarbutton-icon,
 	.menuitem-iconic[privateTab-isPrivate] .menu-iconic-icon > .toolbarbutton-icon {
-		list-style-image: url("chrome://browser/skin/Privacy-16.png") !important;
+		/*list-style-image: url("chrome://browser/skin/privatebrowsing/favicon.svg") !important;*/
+		list-style-image: url("chrome://privatetab/content/privacy-16.png") !important;
 		display: -moz-box !important;
 		width: auto !important;
 		height: auto !important;
