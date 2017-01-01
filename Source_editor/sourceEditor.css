@@ -3,7 +3,7 @@
 @namespace url("http://www.w3.org/1999/xhtml");
 /* Some tweaks for source editor component (used in Scratchpad and other developer tools) */
 /* CodeMirror */
-@-moz-document regexp(".+?chrome://browser/content/devtools/codemirror/codemirror\.css.+") {
+@-moz-document regexp(".+?chrome://(?:browser|devtools)/[a-z/]+?/codemirror\.css.+") {
 	.devtools-monospace {
 	  	font-family: monospace !important;
 	}
