@@ -2,6 +2,7 @@
 
 @namespace url("http://www.w3.org/1999/xhtml");
 /* Some tweaks for source editor component (used in Scratchpad and other developer tools) */
+/* (used colors for light theme) */
 /* CodeMirror */
 @-moz-document regexp(".+?chrome://(?:browser|devtools)/[a-z/]+?/codemirror\.css.+") {
 	.devtools-monospace {
@@ -12,6 +13,7 @@
 	}
 	.cm-comment {
 		font-style: italic !important;
+		color: #696969 !important;
 	}
 	.cm-keyword {
 		font-weight: bold !important;
