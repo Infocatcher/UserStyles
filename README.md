@@ -5,6 +5,7 @@ This is some styles to change Firefox (and sometimes SeaMonkey) appearance
 * or just use [Stylish](https://addons.mozilla.org/addon/stylish/) extension
 
 <hr>
+
 #### Styles in alphabetical order
 
 ##### [About:NewTab fixes](About_NewTab_fixes)
@@ -73,6 +74,7 @@ Reduce height of XUL tree rows in Firefox 25+
 Compact vertical tabs added using [Tree Style Tab](https://addons.mozilla.org/firefox/addon/tree-style-tab/) extension
 
 <hr>
+
 #### Site-specific styles in alphabetical order
 
 ##### [HabraHabr.ru: collapse sidebar](HabraHabr.ru_collapse_sidebar)
